@@ -12,3 +12,14 @@ searchBtn.addEventListener('click', () => {
         fetchGames(query); // Call the function to fetch games if there's a valid query
     }
 });
+// Function to fetch games from the RAWG API
+function fetchGames(query) {
+    // The API URL with the user's search query and API key
+    const url = `https://api.rawg.io/api/games?key=${apiKey}&search=${query}`;
+    
+    // Make a GET request to the API
+    fetch(url)
+        .then(response => response.json()) // Convert the response to JSON
+        .then(data => displayGames(data.results)) // Pass the results to the display function
+        .catch(error => console.error('Error fetching games:', error)); // Log any errors to the console
+}
