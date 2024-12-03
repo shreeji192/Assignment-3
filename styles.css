@@ -14,3 +14,59 @@ body {
     background-attachment: fixed; /* Keep the background still when scrolling */
 }
 
+/* ======== Main Container ======== */
+.container {
+    max-width: 900px; /* Limit the content width for better readability */
+    margin: 20px auto; /* Center the container and add some breathing room */
+    padding: 20px; /* Add some space inside the container */
+}
+
+/* ======== Header ======== */
+h1 {
+    color: #afb2b3; /* A subtle neon blue to match the gaming theme */
+    text-shadow: 2px 2px 5px #000000; /* Give the title a cool glowing effect */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; /* Make the title big and bold */
+    letter-spacing: 2px; /* Add some spacing between letters for a stylish touch */
+}
+
+/* ======== Search Box ======== */
+.search-box {
+    margin: 20px 0; /* Add space around the search box */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center everything horizontally */
+    align-items: center; /* Align everything vertically in the middle */
+    gap: 10px; /* Add some space between the input and button */
+}
+
+#search-input {
+    width: 60%; /* Make the input take up most of the space */
+    padding: 15px; /* Add some inner padding for a comfortable feel */
+    border: 2px solid #f568ff; /* Bright neon border for a bold look */
+    border-radius: 4px; /* Round the corners for a modern style */
+    background-color: #1a1a1a; /* Dark background to match the theme */
+    color: #e4e4e4; /* Light text for good readability */
+    font-size: 1rem; /* Standard font size for input */
+}
+
+#search-input::placeholder {
+    color: #888; /* Make placeholder text a bit lighter */
+}
+
+#search-btn {
+    padding: 10px 25px; /* Add some space inside the button */
+    font-size: 1rem; /* Make the button text clear and readable */
+    border: none; /* Remove the default border */
+    background: linear-gradient(45deg, #3219f3, #dd27d4); /* A gradient for that gamer feel */
+    color: white; /* White text stands out well */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    border-radius: 4px; /* Smooth, rounded corners */
+    text-transform: uppercase; /* Make the text all caps for emphasis */
+    font-weight: bold; /* Make the button text bold */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover animations */
+}
+
+#search-btn:hover {
+    transform: scale(1.1); /* Make the button grow a little on hover */
+    box-shadow: 0px 4px 15px rgba(255, 33, 100, 0.926); /* Add a glowing effect */
+}
