@@ -77,3 +77,55 @@ h1 {
     gap: 30px; /* Add space between the cards */
     margin-top: 20px; /* Add some space above the game list */
 }
+/* ======== Game Card ======== */
+.card {
+    background: linear-gradient(135deg, #1a1a1a, #333); /* Subtle gradient background */
+    border: 2px solid #333; /* Add a slight border to define the card */
+    border-radius: 12px; /* Smooth rounded corners */
+    overflow: hidden; /* Crop any overflowing content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a soft shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Make the card lift slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(0, 209, 255, 0.6); /* Add a glowing effect */
+}
+
+.card img {
+    width: 100%; /* Make the image take up the full width */
+    border-bottom: 2px solid #00d1ff; /* Add a bright neon border under the image */
+}
+
+.card h2 {
+    font-size: 1.4rem; /* Make the game title slightly larger */
+    margin: 10px 0; /* Add some space around the title */
+    color: #ff9800; /* Bright orange for a standout title */
+    text-shadow: 1px 1px 4px #ff9900; /* Subtle glow effect */
+}
+
+.card p {
+    font-size: 0.95rem; /* Keep the description text readable */
+    line-height: 1.5; /* Add some spacing between lines */
+    margin: 10px 0; /* Add some space above and below */
+    color: #c4c4c4; /* A softer gray for less emphasis */
+}
+
+.card a {
+    display: inline-block; /* Make the button behave like a block element */
+    margin-top: 10px; /* Add space above the button */
+    padding: 10px 20px; /* Add inner padding */
+    font-size: 0.9rem; /* Make the button text slightly smaller */
+    background: linear-gradient(45deg, #4323f7, #dd00ff); /* Vibrant gradient for the button */
+    color: white; /* White text for readability */
+    text-decoration: none; /* Remove the underline */
+    border-radius: 4px; /* Smooth corners */
+    text-transform: uppercase; /* Make the button text all caps */
+    font-weight: bold; /* Make the button text bold */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add smooth hover effects */
+}
+
+.card a:hover {
+    transform: scale(1.1); /* Make the button grow slightly on hover */
+    box-shadow: 0px 4px 15px rgba(250, 19, 88, 0.75); /* Add a glowing effect */
+}
